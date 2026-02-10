@@ -28,26 +28,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-// Forklaring linje-for-linje:
-//
-//class MainActivity : AppCompatActivity()
-//
-//Denne Activityen bruker AppCompat fordi vi har XML-layout.
-//
-//onCreate()
-//
-//Kalles når Activityen starter.
-//
-//setContentView(R.layout.activity_main)
-//
-//Binder XML-layout (activity_main.xml) til denne Activityen.
-//
-//findViewById<Button>(R.id.btnGallery)
-//
-//Finner knappen i XML med id btnGallery.
-//
-//btnGallery.setOnClickListener { ... }
-//
-//Når brukeren trykker på Gallery-knappen, starter vi GalleryActivity.
-//
-//Samme for Quiz-knappen.
+
