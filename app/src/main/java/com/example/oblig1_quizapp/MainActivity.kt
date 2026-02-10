@@ -10,21 +10,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Koble XML-layouten som ble laget i layoutmappen
         setContentView(R.layout.activity_main)
 
-        // Finn knappene fra XML
         val btnGallery = findViewById<Button>(R.id.btnGallery)
         val btnQuiz = findViewById<Button>(R.id.btnQuiz)
 
-        // Når Gallery trykkes
         btnGallery.setOnClickListener {
-            startActivity(Intent(this, GalleryActivity::class.java)) //Åpner gallery
+            startActivity(Intent(this, GalleryActivity::class.java))
         }
 
-        // Når Quiz trykkes
         btnQuiz.setOnClickListener {
-            startActivity(Intent(this, QuizActivity::class.java)) //Åpner quiz
+            startActivity(Intent(this, QuizActivity::class.java))
         }
     }
 }
